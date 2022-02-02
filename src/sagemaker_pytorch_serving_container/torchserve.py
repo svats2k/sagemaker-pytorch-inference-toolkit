@@ -89,8 +89,9 @@ def start_torchserve(handler_service=DEFAULT_HANDLER_SERVICE):
         MODEL_STORE,
         "--ts-config",
         TS_CONFIG_FILE,
-        "--log-config",
-        DEFAULT_TS_LOG_FILE,
+        # Commented by srivatsa 2/2/22
+        #"--log-config",
+        #DEFAULT_TS_LOG_FILE,
         "--models",
         "model.mar"
     ]
